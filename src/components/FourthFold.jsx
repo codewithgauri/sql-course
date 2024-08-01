@@ -12,7 +12,7 @@ const FourthFold = () => {
         </div>
         <div className="row">
           <div className="col-lg-12">
-            <div className="px-24 py-24 dautam-prereq new-dautam dautam-learn-bg">
+            <div className="px-24 py-24 dautam-prereq new-dautam">
               <ul className="list-unstyled">
                 {ForthData.skills.map((skill, index) => (
                   <li key={index} className="d-flex fs-14 mb-12">

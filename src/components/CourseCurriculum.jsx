@@ -19,7 +19,7 @@ const CourseCurriculum = () => {
       <div className="faq-area">
         <div className="section-title d-md-flex d-block justify-content-between">
           <h2>{Course.heading}</h2>
-          <p className="font-weight-bold text-danger mb-0 mt-10 mt-md-0">
+          <p className="font-weight-bold module-color mb-0 mt-10 mt-md-0">
             {Course.sub_heading}
           </p>
         </div>
@@ -36,7 +36,7 @@ const CourseCurriculum = () => {
                       onClick={(e) => { preventDefault(e); handleToggle(course.panelId); }}
                     >
                       <span className="me-auto">{course.title}</span>
-                      <p className="fs-14 fw-400 text-gray-800 pt-6 mb-0 text-nowrap">
+                      <p className="fs-14 fw-400 text-gray-500 pt-6 mb-0 text-nowrap">
                         {course.sessions}
                       </p>
                     </a>

@@ -14,6 +14,7 @@ import Faq from '../components/Faq';
 import Sticky from '../components/Sticky';
 import Footer from '../components/Footer';
 import Whatsapp from '../components/Whatsapp';
+import CourseFeature from '../components/CourseFeature';
 import Star from '../components/star';
 
 const Home = () => {
@@ -28,12 +29,13 @@ const Home = () => {
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-12">
+                      <CourseFeature />
                         <SecongFold />
                         <ThirdFold />
                         <Prerequisites />
                         <FourthFold />
-                        <SixthFold />
                         <FifthFold />
+                        <SixthFold />
                         <CourseCurriculum />
                         <Certificate />
                         <Faq />

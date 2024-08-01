@@ -1,6 +1,7 @@
 import dautamcertificate from '../assets/img/dautamcertificate.png';
 import videoLearning from '../assets/img/video-learning.png';
 import herobanner from '../assets/img/herobanner.png';
+import avatar from '../assets/img/avatar.png';
 
 export const firstData = {
     description: "From Novice To Pro: Comprehensive Guide To ",
@@ -28,36 +29,43 @@ export const testimonialData = {
     heading: "What do learners say about this course?",
     testimonials: [
       {
+        img : avatar,
         name: "Sharayu Khanvilkar",
         review: "I would like to extend my heartfelt thanks to Mr. Nirmal Pant for conducting an excellent Power BI training course. One of my friends referred me to Mr. Pant's",
         link: "https://courses.datumdiscovery.com/courses/Master-Class-Power-BI-63d1c288e4b09b42453a4fbe"
       },
       {
+        img : avatar,
         name: "Manisha S",
         review: "The place where one's search comes to an end. And begins a journey of in-depth learning of the Data Visualization Tool - Power BI. Nirmal Sir has been instrumental",
         link: "https://courses.datumdiscovery.com/courses/Master-Class-Power-BI-63d1c288e4b09b42453a4fbe"
       },
       {
+        img : avatar,
         name: "Girija Naik",
         review: "Thanks for a great training course. Excellent and professional training course of Power BI. I found this Power BI training session excellent! Mr. Nirmal Pant's",
         link: "https://courses.datumdiscovery.com/courses/Master-Class-Power-BI-63d1c288e4b09b42453a4fbe"
       },
       {
+        img : avatar,
         name: "Syed Amjad Ali",
         review: "I found Mastering Power BI course on this platform very engaging and up-to-date. Mr. Nirmal Pant explanations are clear, making complex concepts easy to grasp.",
         link: "https://courses.datumdiscovery.com/courses/Master-Class-Power-BI-63d1c288e4b09b42453a4fbe"
       },
       {
+        img : avatar,
         name: "Nickey Raj",
         review: "Learning Power BI under the guidance of Mr. Nirmal Pant was an exceptional experience. Mr. Pant’s deep expertise in the subject matter was excelled",
         link: "https://courses.datumdiscovery.com/courses/Master-Class-Power-BI-63d1c288e4b09b42453a4fbe"
       },
       {
+        img : avatar,
         name: "Karthikeyan Vellaiyan",
         review: "This training has had a significant impact on my professional growth. I now feel confident in my ability to leverage Power BI for data-driven business landscape.",
         link: "https://courses.datumdiscovery.com/courses/Master-Class-Power-BI-63d1c288e4b09b42453a4fbe"
       },
       {
+        img : avatar,
         name: "Meghana Bothe",
         review: "Thank you for a great course Nirmal. Personal Coaching with lots of opportunities to ask questions which made this enjoyable learning. This course has more",
         link: "https://courses.datumdiscovery.com/courses/Master-Class-Power-BI-63d1c288e4b09b42453a4fbe"
@@ -132,7 +140,7 @@ export const Course = {
 };
 
 export const certification = {
-    heading:'Get Certiaaafied',
+    heading:'Get Certified',
     Image:dautamcertificate
 }
 

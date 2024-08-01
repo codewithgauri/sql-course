@@ -142,7 +142,6 @@ const FirstFold = () => {
                     <span className="slider__word">Insights</span>
                   </span>
                 </h1>
-
               </div>
             </div>
           </div>

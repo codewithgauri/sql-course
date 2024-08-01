@@ -13,7 +13,7 @@ const Prerequisites = () => {
         </div>
         <div className="row">
           <div className="col-lg-12">
-            <div className="px-24 py-24 dautam-prereq new-dautam dautam-learn-bg">
+            <div className="px-24 py-24 new-dautam">
               <ul className="list-unstyled">
                 {prerequisitesData.list.map((item, index) => (
                   <li className="d-flex fs-14 mb-12" key={index}>

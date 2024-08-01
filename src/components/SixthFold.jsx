@@ -10,7 +10,14 @@ const SixthFold = () => {
           <div className="col-lg-12">
             <div className="author_two">
               <div className="d-md-flex justify-content-md-start">
-                <div className="author-del-2">
+              <div className='author-del-img'>
+                <img 
+                  src={avatar}
+                  className="me-md-40 mb-md-0 mb-20 author-pic" 
+                  alt="Nirmal Pant" 
+                />
+                </div>
+                <div className="author-del-3">
                   <h2 className="fs-24 mb-16 author-name">{InstructorData.name}</h2>
                   <p className="fs-16 fw-400 text-white author-dec mb-3">{InstructorData.description}</p>
                   <div className="d-flex align-items-center justify-content-between">
@@ -25,7 +32,7 @@ const SixthFold = () => {
                     <div className="d-flex align-items-center gap-2">
                       <a 
                         href={InstructorData.linkdin} 
-                        className="btn bg-white btn-round btn-icon-md lh-40" 
+                        className="btn bg-white btn-round btn-icon-md lh-40 social-svg" 
                         target="_blank" 
                         rel="noopener noreferrer"
                       >
@@ -46,7 +53,7 @@ const SixthFold = () => {
                       </a>
                       <a 
                         href={InstructorData.Instagram} 
-                        className="btn bg-white btn-round btn-icon-md lh-40" 
+                        className="btn bg-white btn-round btn-icon-md lh-40 social-svg" 
                         target="_blank" 
                         rel="noopener noreferrer"
                       >
@@ -97,13 +104,7 @@ const SixthFold = () => {
                     </div>
                   </div>
                 </div>
-                <div className='author-del-img'>
-                <img 
-                  src={avatar}
-                  className="me-md-40 mb-md-0 mb-20 author-pic" 
-                  alt="Nirmal Pant" 
-                />
-                </div>
+
               </div>
             </div>
           </div>

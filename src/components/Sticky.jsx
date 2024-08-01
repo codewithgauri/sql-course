@@ -5,6 +5,7 @@ const Sticky = () => {
   return (
     <div className="col-lg-4 col-12">
       <div className="course-details-purchase purchase-section position-sticky mb-16 d-lg-block d-none">
+        <div className='box__bg'>
         <div className="card">
           <img 
             src={stickyData.headingImg} 
@@ -52,6 +53,7 @@ const Sticky = () => {
               ))}
             </ul>
           </div>
+        </div>
         </div>
       </div>
     </div>
