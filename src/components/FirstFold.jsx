@@ -10,10 +10,10 @@ import { firstData, stickyData } from '../constant/constantdata';
 const FirstFold = () => {
   return (
     <>
-    {/* <div class="star-bg">
+    <div class="star-bg">
         <div id="stars"></div>
         <div id="stars3"></div>
-    </div> */}
+    </div>
       <div className="home-area">
         <div className="container">
           <div className="row align-items-center">
