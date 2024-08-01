@@ -1,19 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faClock, faHourglass } from '@fortawesome/free-regular-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import nirmalsir from '../assets/img/nirmalsir.png';
+import prajakta from '../assets/img/PrajaktaGaikwad.png';
 import { firstData, stickyData } from '../constant/constantdata';
 
 
 const FirstFold = () => {
+  const [liveCount, setLiveCount] = useState(100);
+  const animationRef = useRef(null);
+
+  useEffect(() => {
+    const startValue = 1200;
+    const endValue = 2192;
+    const duration = 2000; // Duration in milliseconds
+    const startTime = performance.now(); // Get current time
+
+    const animate = (currentTime) => {
+      const elapsedTime = currentTime - startTime;
+      const progress = Math.min(elapsedTime / duration, 1); // Ensure progress is between 0 and 1
+
+      const currentValue = Math.round(startValue + (endValue - startValue) * progress);
+      setLiveCount(currentValue);
+
+      if (progress < 1) {
+        animationRef.current = requestAnimationFrame(animate);
+      }
+    };
+
+    animationRef.current = requestAnimationFrame(animate);
+
+    // Cleanup function to cancel the animation frame when the component unmounts
+    return () => cancelAnimationFrame(animationRef.current);
+  }, []);
+
   return (
     <>
-    <div class="star-bg">
+      <div className="star-bg">
         <div id="stars"></div>
         <div id="stars3"></div>
-    </div>
+      </div>
       <div className="home-area">
         <div className="container">
           <div className="row align-items-center">
@@ -52,7 +80,6 @@ const FirstFold = () => {
                         <h5 className="card-title fs-20 fw-600 mb-20 text-dark mt-20">{stickyData.listHeading}</h5>
                         <ul className="list-unstyled dautam-mob-purchase-points mb-0">
                           {stickyData.list.map((item, index) => (
-
                             <li className="d-flex fs-16 mb-12 text-gray-800 fw-400 align-items-start" key={index}>
                               <img
                                 src={item.img}
@@ -73,33 +100,28 @@ const FirstFold = () => {
                 <hr className="my-3 dautam-hero-border b-dashed border-light" />
                 <div className="rating_bar-dautam d-flex align-items-center gap-3 mb-16">
                   <div className='all-round'>
-                  <div className='rating-cus'>
-                  <p className="text-warning mb-0 rating_number">{firstData.para_rating}</p>
-                  <div className="d-flex align-items-center text-warning gap-2">
-                    <div className="generated-star-rating-wrap">
-                      <FontAwesomeIcon icon={faStar} />
-                      <FontAwesomeIcon icon={faStar} />
-                      <FontAwesomeIcon icon={faStar} />
-                      <FontAwesomeIcon icon={faStar} />
-                      <FontAwesomeIcon icon={faStar} />
+                    <div className='rating-cus'>
+                      <p className="text-warning mb-0 rating_number">{firstData.para_rating}</p>
+                      <div className="d-flex align-items-center text-warning gap-2">
+                        <div className="generated-star-rating-wrap">
+                          <FontAwesomeIcon icon={faStar} />
+                          <FontAwesomeIcon icon={faStar} />
+                          <FontAwesomeIcon icon={faStar} />
+                          <FontAwesomeIcon icon={faStar} />
+                          <FontAwesomeIcon icon={faStar} />
+                        </div>
+                      </div>
+                      <a href="#" className="text-white">
+                        ({firstData.para_rating_number} ratings)
+                      </a>
+                    </div>
+
+                    <div className='leaner-cus'>
+                      <FontAwesomeIcon icon="fa-solid fa-user" />
+                      <span className="font-semibold">{liveCount}+</span> <span className="ml-1 tex">learners</span>
                     </div>
                   </div>
-<a href="#" className="text-white">
-                    ({firstData.para_rating_number} ratings)
-                  </a>
-                  </div>
-
-                  <div className='leaner-cus'>
-
-                  <FontAwesomeIcon icon="fa-solid fa-user" />
-                  <span className="font-semibold" >5449</span> <span className="ml-1 tex ">learners</span>
-</div>
-</div>
-                  
-
                 </div>
-                
-
                 <div className="author_bar d-flex align-items-center gap-3 fs-16 mb-16">
                   <p className="text-gray-400 mb-0 fs-16">Created by:</p>
                   <div className="d-flex align-items-center">
@@ -115,6 +137,21 @@ const FirstFold = () => {
                       rel="noopener noreferrer"
                     >
                       Nirmal Pant
+                    </a>
+                  </div>
+                  <div className="d-flex align-items-center">
+                    <div className="rbt-avater me-6">
+                      <a href="https://www.linkedin.com/in/prajakta-gaikwad-33b678198/" target="_blank" rel="noopener noreferrer">
+                        <img src={prajakta} alt="nirmal pant" />
+                      </a>
+                    </div>
+                    <a
+                      href="https://www.linkedin.com/in/prajakta-gaikwad-33b678198/"
+                      className="text-warning"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Prajakta Gaikwad
                     </a>
                   </div>
                 </div>
@@ -135,7 +172,7 @@ const FirstFold = () => {
                   </p>
                 </div>
                 <h1 className='sliding_text'>
-                 Turn Data into 
+                  Turn Data into
                   <span className="slider">
                     <span className="slider__word">Decisions</span>
                     <span className="slider__word">Stories</span>

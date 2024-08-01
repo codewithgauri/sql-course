@@ -1,12 +1,18 @@
 import dautamcertificate from '../assets/img/dautamcertificate.png';
 import videoLearning from '../assets/img/video-learning.png';
-import herobanner from '../assets/img/herobanner.png';
-import avatar from '../assets/img/avatar.png';
+import herobanner from '../assets/img/herobanner2.png';
+import b from '../assets/img/testimonials/1.png';
+import c from '../assets/img/testimonials/2.png';
+import d from '../assets/img/testimonials/3.png';
+import e from '../assets/img/testimonials/4.png';
+import f from '../assets/img/testimonials/5.png';
+import g from '../assets/img/testimonials/6.png';
+
 
 export const firstData = {
-    description: "From Novice To Pro: Comprehensive Guide To ",
-    description_span:"Power BI Data Analytics",
-    para1: "With this practical beginner’s course, learn Power BI from scratch and prepare for data analyst, business analyst, or Power BI developer careers. The course offers a detailed project, giving you real organizational experience and business context.",
+    description: "SQL and Power BI Mastery: Your Step-by-Step Guide from ",
+    description_span:"Start to Finish",
+    para1: "Ready to level up your data skills? This course is your gateway to mastering both SQL and Power BI, starting from the basics and moving all the way to advanced techniques. Whether you're just beginning your data journey or looking to enhance your expertise, we’ve got you covered.",
     para_rating: 4.8,
     para_rating_number: 1708,
     last_updated: "July 4, 2024",
@@ -29,43 +35,43 @@ export const testimonialData = {
     heading: "What do learners say about this course?",
     testimonials: [
       {
-        img : avatar,
+        img : g,
         name: "Sharayu Khanvilkar",
         review: "I would like to extend my heartfelt thanks to Mr. Nirmal Pant for conducting an excellent Power BI training course. One of my friends referred me to Mr. Pant's",
         link: "https://courses.datumdiscovery.com/courses/Master-Class-Power-BI-63d1c288e4b09b42453a4fbe"
       },
       {
-        img : avatar,
+        img : b,
         name: "Manisha S",
         review: "The place where one's search comes to an end. And begins a journey of in-depth learning of the Data Visualization Tool - Power BI. Nirmal Sir has been instrumental",
         link: "https://courses.datumdiscovery.com/courses/Master-Class-Power-BI-63d1c288e4b09b42453a4fbe"
       },
       {
-        img : avatar,
+        img : c,
         name: "Girija Naik",
         review: "Thanks for a great training course. Excellent and professional training course of Power BI. I found this Power BI training session excellent! Mr. Nirmal Pant's",
         link: "https://courses.datumdiscovery.com/courses/Master-Class-Power-BI-63d1c288e4b09b42453a4fbe"
       },
       {
-        img : avatar,
+        img : d,
         name: "Syed Amjad Ali",
         review: "I found Mastering Power BI course on this platform very engaging and up-to-date. Mr. Nirmal Pant explanations are clear, making complex concepts easy to grasp.",
         link: "https://courses.datumdiscovery.com/courses/Master-Class-Power-BI-63d1c288e4b09b42453a4fbe"
       },
       {
-        img : avatar,
+        img : e,
         name: "Nickey Raj",
         review: "Learning Power BI under the guidance of Mr. Nirmal Pant was an exceptional experience. Mr. Pant’s deep expertise in the subject matter was excelled",
         link: "https://courses.datumdiscovery.com/courses/Master-Class-Power-BI-63d1c288e4b09b42453a4fbe"
       },
       {
-        img : avatar,
+        img : f,
         name: "Karthikeyan Vellaiyan",
         review: "This training has had a significant impact on my professional growth. I now feel confident in my ability to leverage Power BI for data-driven business landscape.",
         link: "https://courses.datumdiscovery.com/courses/Master-Class-Power-BI-63d1c288e4b09b42453a4fbe"
       },
       {
-        img : avatar,
+        img : g,
         name: "Meghana Bothe",
         review: "Thank you for a great course Nirmal. Personal Coaching with lots of opportunities to ask questions which made this enjoyable learning. This course has more",
         link: "https://courses.datumdiscovery.com/courses/Master-Class-Power-BI-63d1c288e4b09b42453a4fbe"
@@ -106,10 +112,10 @@ export const InstructorData = {
 
 export const InstructorData2 = {
   heading: "Course Instructor",
-  name: "Nirmal Pant",
-  linkdin:"https://www.linkedin.com/in/datumdiscovery/",
-  Instagram:"https://www.instagram.com/datum_discovery/",
-  description:"Founder & CEO at Datum Discovery || Corporate Trainer & International Mentor @ Power BI, Tableau, SQL, Data & Business Analytics, Business Intelligence, Data Science || Power BI Consultant || IIM Calcutta"
+  name: "Prajakta Gaikwad ",
+  linkdin:"https://www.linkedin.com/in/prajakta-gaikwad-33b678198/",
+  Instagram:"https://www.linkedin.com/in/prajakta-gaikwad-33b678198/",
+  description:"Data Analyst & Corporate Trainer at Datum Discovery 📈| Ex-Fujitsu | Data-Driven Decision Maker with a Strong Engineering Background"
 };
 
 export const Course = {

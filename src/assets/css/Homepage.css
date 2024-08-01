@@ -2597,7 +2597,7 @@ footer .footer-bottom ul li:last-child a {
 }
 
 .course-details-purchase .card .preview_thumb {
-  border-radius: 10px 10px 10px 126px
+  border-radius: 10px 10px 10px 10px
 }
 
 .course-details-purchase .card .bt-indicator {
@@ -2751,7 +2751,7 @@ footer .footer-bottom ul li:last-child a {
 }
 
 .author_one .author-pic {
-  max-height: 224px;
+  max-height: 20
 }
 
 @media (min-width: 768px) {
@@ -3009,7 +3009,7 @@ button:hover {
 
 p1 {
   background: radial-gradient(circle at 100%,
-      #b2a8fd,
+      #4facfe,
       #8678f9 50%,
       #c7d2fe 75%,
       #9a8dfd 75%);
@@ -3018,7 +3018,7 @@ p1 {
   color: #000;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animatedTextGradient 1.5s linear infinite;
+  animation: animatedTextGradient 1.8s linear infinite;
 }
 
 @keyframes animatedTextGradient {

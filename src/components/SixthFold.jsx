@@ -1,6 +1,7 @@
 import React from 'react'
 import  avatar from '../assets/img/avatar.png';
-import { InstructorData } from '../constant/constantdata';
+import instruuctor2avtar from '../assets/img/Instructor2Avatar.png'
+import { InstructorData2 } from '../constant/constantdata';
 
 const SixthFold = () => {
   return (
@@ -12,18 +13,18 @@ const SixthFold = () => {
               <div className="d-md-flex justify-content-md-start">
               <div className='author-del-img'>
                 <img 
-                  src={avatar}
+                  src={instruuctor2avtar}
                   className="me-md-40 mb-md-0 mb-20 author-pic" 
                   alt="Nirmal Pant" 
                 />
                 </div>
                 <div className="author-del-3">
-                  <h2 className="fs-24 mb-16 author-name">{InstructorData.name}</h2>
-                  <p className="fs-16 fw-400 text-white author-dec mb-3">{InstructorData.description}</p>
+                  <h2 className="fs-24 mb-16 author-name">{InstructorData2.name}</h2>
+                  <p className="fs-16 fw-400 text-white author-dec mb-3">{InstructorData2.description}</p>
                   <div className="d-flex align-items-center justify-content-between">
                     <a 
                       className="text-warning fs-16" 
-                      href={InstructorData.linkdin} 
+                      href={InstructorData2.linkdin} 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
@@ -31,7 +32,7 @@ const SixthFold = () => {
                     </a>
                     <div className="d-flex align-items-center gap-2">
                       <a 
-                        href={InstructorData.linkdin} 
+                        href={InstructorData2.linkdin} 
                         className="btn bg-white btn-round btn-icon-md lh-40 social-svg" 
                         target="_blank" 
                         rel="noopener noreferrer"
@@ -52,7 +53,7 @@ const SixthFold = () => {
                         </svg>
                       </a>
                       <a 
-                        href={InstructorData.Instagram} 
+                        href={InstructorData2.Instagram} 
                         className="btn bg-white btn-round btn-icon-md lh-40 social-svg" 
                         target="_blank" 
                         rel="noopener noreferrer"

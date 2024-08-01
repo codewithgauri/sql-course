@@ -2,7 +2,7 @@ import React from 'react';
 import  avatar from '../assets/img/avatar.png';
 import instructor2 from '../assets/img/instructor2image.png'
 
-import { InstructorData } from '../constant/constantdata';
+import { InstructorData, InstructorData2 } from '../constant/constantdata';
 
 
 const FifthFold = () => {
