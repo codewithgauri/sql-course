@@ -7,6 +7,7 @@ import { testimonialData } from '../constant/constantdata';
 const ThirdFold = () => {
   const settings = {
     dots: true,
+    arrows:false,
     infinite: true,
     speed: 500,
     slidesToShow: 2,

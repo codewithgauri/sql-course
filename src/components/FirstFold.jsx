@@ -10,6 +10,10 @@ import { firstData, stickyData } from '../constant/constantdata';
 const FirstFold = () => {
   return (
     <>
+    {/* <div class="star-bg">
+        <div id="stars"></div>
+        <div id="stars3"></div>
+    </div> */}
       <div className="home-area">
         <div className="container">
           <div className="row align-items-center">
@@ -68,6 +72,8 @@ const FirstFold = () => {
                 </p>
                 <hr className="my-3 dautam-hero-border b-dashed border-light" />
                 <div className="rating_bar-dautam d-flex align-items-center gap-3 mb-16">
+                  <div className='all-round'>
+                  <div className='rating-cus'>
                   <p className="text-warning mb-0 rating_number">{firstData.para_rating}</p>
                   <div className="d-flex align-items-center text-warning gap-2">
                     <div className="generated-star-rating-wrap">
@@ -78,12 +84,19 @@ const FirstFold = () => {
                       <FontAwesomeIcon icon={faStar} />
                     </div>
                   </div>
-                  
-                  <a href="#" className="text-white">
+<a href="#" className="text-white">
                     ({firstData.para_rating_number} ratings)
                   </a>
-                  <FontAwesomeIcon icon="fa-solid fa-user" style={{color: "#63E6BE"}} />
-                  <span className="font-semibold" style={{color: "#63E6BE"}}>5449</span> <span className="ml-1 tex "style={{color: "#63E6BE"}}>learners</span>
+                  </div>
+
+                  <div className='leaner-cus'>
+
+                  <FontAwesomeIcon icon="fa-solid fa-user" />
+                  <span className="font-semibold" >5449</span> <span className="ml-1 tex ">learners</span>
+</div>
+</div>
+                  
+
                 </div>
                 
 

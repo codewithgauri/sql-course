@@ -187,6 +187,50 @@ span {
   font-weight: 500;
 }
 
+.slick-dots{
+  bottom: -35px;
+}
+
+.slick-dots li button{
+  width: 10px;
+  height: 10px;
+}
+
+.rating-cus,
+.leaner-cus{
+  display: flex;
+  gap:5px;
+}
+
+.leaner-cus{
+  border-radius: 10px;
+  padding: 4px 0px 4px 15px;
+  width: 165px;
+  color: white !important;
+  background-color: #5454b6;
+}
+
+.leaner-cus span{
+  color: white !important;
+}
+
+.leaner-cus svg{
+  position: relative;
+  top: 3px;
+}
+
+.all-round {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .all-round {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .button {
   padding: 15px 20px;
   color: #202020;
@@ -623,8 +667,9 @@ header .humberger-menu .last-line.current {
 .home-area {
   padding: 100px 0;
   background: #021b79;
-  background-image: linear-gradient(-45deg, rgba(4, 20, 62, 1) 0%, rgba(20, 42, 144, 1) 25%, rgba(4, 20, 62, 1) 51%, rgba(20, 42, 144, 1) 100%);
-}
+  /* background-image: linear-gradient(-45deg, rgba(4, 20, 62, 1) 0%, rgba(20, 42, 144, 1) 25%, rgba(4, 20, 62, 1) 51%, rgba(20, 42, 144, 1) 100%); */
+  /* background-image: #74EBD5; background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);background-color: #74EBD5; background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);} */
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);}
 
 @media only screen and (max-width: 1400px) {
   .home-area {
@@ -1324,7 +1369,8 @@ header .humberger-menu .last-line.current {
   padding: 10px 35px 10px 20px;
   border-radius: 5px;
   font-size: 18px;
-  color: #333b55;
+  color: #000;
+  box-shadow: none;
   text-decoration: none;
   background-color: #fff;
   position: relative;
@@ -2312,7 +2358,7 @@ footer .footer-bottom ul li:last-child a {
   font-weight: 400;
   line-height: 28px;
   margin-bottom: 30px;
-  color: #cdcdcd;
+  color: #f0f0f0 !important;
 }
 
 .mt-24 {
@@ -2666,7 +2712,7 @@ footer .footer-bottom ul li:last-child a {
 /* responsive */
 @media (max-width: 575.98px) {
   .course_intro_dautam h1 {
-    font-size: 30px;
+    font-size: 29px;
     line-height: 42px;
   }
 
